@@ -104,7 +104,7 @@ int main() {
     printf("2: comparacao de 2 dados\n");
     printf("3: comparacao geral\n");
 
-    printf("\nopcao desejada:");
+    printf("\nopcao desejada: ");
     scanf("%d", &escolhaA);
     printf("\n");
     if (escolhaA >3 || escolhaA <1)
@@ -125,7 +125,7 @@ int main() {
         printf("4: populacao\n");
         printf("5: turistas\n");
 
-        printf("\nopcao desejada:");
+        printf("\nopcao desejada: ");
         scanf("%d", &escolhaB);
         printf("\n");
 
@@ -229,7 +229,7 @@ int main() {
         printf("4: populacao\n");
         printf("5: turistas\n");
         
-        printf("\nopcao desejada:");
+        printf("\nopcao desejada: ");
         scanf("%d", &escolhaC1);
         printf("\n");
 
@@ -247,7 +247,7 @@ int main() {
         printf("4: populacao\n");
         printf("5: turistas\n");
 
-        printf("\nopcao desejada:");
+        printf("\nopcao desejada: ");
         scanf("%d", &escolhaC2);
         printf("\n");
 
