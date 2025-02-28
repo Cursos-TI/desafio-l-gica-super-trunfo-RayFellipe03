@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int main() {
     // Variaveis dos atributos da cidade.
     char StateName1[15], StateName2[15];
@@ -96,7 +97,7 @@ int main() {
         printf("A carta 1 possui um PIB per capita maior (+1 ponto)\n");
         PontosCard1++;
     } else if (PibCalc1 == PibCalc2) {
-        printf("Tivemos um empate e ambas as cartas ganharam +1 ponto\n");
+        printf("Tivemos um empate de PIB per capita e ambas as cartas ganharam +1 ponto\n");
         PontosCard1++;
         PontosCard2++;
     } else {
@@ -104,15 +105,15 @@ int main() {
         PontosCard2++;
     }
 
-    if (DensityCalc1 > DensityCalc2) {
-        printf("A carta 1 possui uma densidade populacional maior (+1 ponto)\n");
+    if (DensityCalc1 < DensityCalc2) {
+        printf("A carta 1 possui uma densidade populacional menor (+1 ponto)\n");
         PontosCard1++;
     } else if (DensityCalc1 == DensityCalc2) {
-        printf("Tivemos um empate e ambas as cartas ganharam +1 ponto\n");
+        printf("Tivemos um empate de densidade populacional e ambas as cartas ganharam +1 ponto\n");
         PontosCard1++;
         PontosCard2++;
     } else {
-        printf("A carta 2 possui uma densidade populacional maior (+1 ponto)\n");
+        printf("A carta 2 possui uma densidade populacional menor (+1 ponto)\n");
         PontosCard2++;
     }
 
@@ -120,7 +121,7 @@ int main() {
         printf("A carta 1 possui mais pontos turisticos (+1 ponto)\n");
         PontosCard1++;
     } else if (TouristPoints1 == TouristPoints2) {
-        printf("Tivemos um empate e ambas as cartas ganharam +1 ponto\n");
+        printf("Tivemos um empate de pontos turisticos e ambas as cartas ganharam +1 ponto\n");
         PontosCard1++;
         PontosCard2++;
     } else {
